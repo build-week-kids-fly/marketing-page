@@ -23,3 +23,4 @@ For your project this week, you will demonstrate proficiency by working with a g
 - [ ]  For a second page, you could do an about us section that includes images of the members of your team, and links to one another's socials/Github.
 ## Your Grading Rubric Here:
 Use [this rubric](https://www.notion.so/a46116338c574ad49d10a142cd79ed57?v=aece62797cea420b861d4913051d0761) to help guide your development processes
+Using the less compiler, enter `less-watch-compiler less css index.less` into the Git terminal.

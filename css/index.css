@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Russo One", sans-serif;
 }
 html .hero,
 body .hero {
@@ -188,7 +188,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Ubuntu", sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -266,7 +266,7 @@ img {
   }
 }
 .home .heading {
-  border-bottom: 2px dashed #c0c0c0;
+  border-bottom: 2px dashed silver;
   padding-bottom: 14px;
 }
 .content-section.flex {
@@ -283,7 +283,11 @@ img {
   }
 }
 .content {
-  margin: 40px;
+  margin: 0 auto;
+}
+.seats {
+  height: 20rem;
+  width: 100%;
 }
 .packages-content {
   width: 30%;
@@ -295,6 +299,84 @@ img {
     width: 100%;
   }
 }
+.packages {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .packages {
+    width: 100%;
+  }
+}
+.pflex {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .pflex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.package-flex {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
 .ul .a {
   font-size: 1.6rem;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  height: 2rem;
+  color: lightblue;
+  background-color: #22283A;
+  border: none;
+  padding: 2rem;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-top: 1rem;
+  position: relative;
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+  }
+}
+button:hover {
+  background: lightblue;
+  color: #22283A;
+  cursor: pointer;
+}
+button:after {
+  content: "";
+  background: #90ee90;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }

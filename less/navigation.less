@@ -1,0 +1,45 @@
+// Navigation Styles Here
+.top.flex{
+    width: 100%; 
+    border-bottom: 2px dashed @wing; 
+    padding: 15px 0; 
+    @media @phone{
+        flex-direction: column;
+    }
+}
+
+.nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0 0 0 50px;
+    margin: 0 auto; 
+    @media @phone{
+        width: 100%;
+        flex-wrap: wrap;
+      }
+}
+a {
+    color: @nav-font;
+    text-decoration: none;
+    font-size: 2.2rem;
+    
+    
+  }
+  a:hover {
+    color: @wing;
+    background: @cloud-lining;
+    text-decoration: underline;
+    cursor: pointer;
+    @media @phone {
+      color: @propellar;
+      background-color: @seats;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+

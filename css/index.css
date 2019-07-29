@@ -134,23 +134,73 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Russo One", sans-serif;
+}
+html .hero,
+body .hero {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+html .hero::before,
+body .hero::before {
+  background-image: url("../images/kidplane.jpg");
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.3;
+}
+html .hero-text::before,
+body .hero-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  min-width: 100%;
+  min-height: 12em;
+  z-index: inherit-1;
+  opacity: 0.4;
+  background-color: transparent;
+}
+html .hero::after,
+body .hero::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Ubuntu", sans-serif;
+  color: #212529;
 }
 h1 {
+  font-weight: bolder;
   font-size: 4rem;
 }
 h2 {
+  font-weight: bold;
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
-h4 {
+h3 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
@@ -191,16 +241,34 @@ img {
   }
 }
 .nav {
-  vertical-align: top;
-  padding-top: 11px;
-  margin-left: 60px;
-  font-size: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0 0 0 50px;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .nav {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+a {
+  color: #454A59;
+  text-decoration: none;
+  font-size: 2.2rem;
+}
+a:hover {
+  color: silver;
+  background: #5E6164;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  a:hover {
+    color: lightblue;
+    background-color: #454A59;
   }
 }
 .flex {
@@ -219,22 +287,138 @@ img {
   }
 }
 .home .heading {
-  border-bottom: 2px dashed #c0c0c0;
+  border-bottom: 2px dashed silver;
   padding-bottom: 14px;
 }
 .content-section.flex {
   margin-top: 25px;
 }
-.content-pick .offers {
+.content-pick .offers .checkbox {
   width: 30%;
   margin-bottom: 30px;
   margin-top: 25px;
 }
 @media (max-width: 500px) {
-  .content-pick .offers {
+  .content-pick .offers .checkbox {
     width: 100%;
   }
 }
 .content {
-  margin: 40px;
+  padding-top: 5rem;
+  margin: 0 auto;
+}
+.pic {
+  width: 20rem;
+  height: 20rem;
+}
+.crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web-ui {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+}
+.seats {
+  height: 20rem;
+  width: 100%;
+}
+.package-home {
+  border-top: 2px dashed silver;
+  border-bottom: 2px dashed silver;
+}
+.packages-content {
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .packages-content {
+    width: 100%;
+  }
+}
+.packages {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .packages {
+    width: 100%;
+  }
+}
+.pflex {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .pflex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.package-flex {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+.ul .a,
+label {
+  font-size: 1.6rem;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  height: 2rem;
+  color: lightblue;
+  background-color: #22283A;
+  border: none;
+  padding: 2rem;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-top: 1rem;
+  position: relative;
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+  }
+}
+button:hover {
+  background: lightblue;
+  color: #22283A;
+  cursor: pointer;
+}
+button:after {
+  content: "";
+  background: #90ee90;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }

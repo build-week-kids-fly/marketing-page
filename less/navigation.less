@@ -9,15 +9,32 @@
 }
 
 .nav{
-    vertical-align: top; 
-    padding-top: 11px;
-    margin-left: 60px;
-    font-size: 20px;
-
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0 0 0 50px;
+    margin: 0 auto; 
+    @media @phone{
+        width: 100%;
+        flex-wrap: wrap;
+      }
+}
+a {
+    color: @nav-font;
+    text-decoration: none;
+    font-size: 2.2rem;
+    
+    
+  }
+  a:hover {
+    color: @wing;
+    background: @cloud-lining;
+    text-decoration: underline;
+    cursor: pointer;
     @media @phone {
-      display: flex;
-      width: 50%; 
-      justify-content: space-between; 
+      color: @propellar;
+      background-color: @seats;
     }
 }
 

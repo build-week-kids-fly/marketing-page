@@ -3,7 +3,7 @@
     width: 100%; 
     border-bottom: 2px dashed @wing; 
     padding: 15px 0; 
-    @media @phone{
+    @media @tablet{
         flex-direction: column;
     }
 }
@@ -14,16 +14,21 @@
     justify-content: space-around;
     align-items: baseline;
     padding: 0 0 0 50px;
-    margin: 0 auto; 
-    @media @phone{
+    margin: 0 auto;
+
+    @media @tablet{
         width: 100%;
         flex-wrap: wrap;
       }
-}
-a {
-    color: @nav-font;
-    text-decoration: none;
-    font-size: 2.2rem;
+    }
+    a {
+      color: @nav-font;
+      text-decoration: none;
+      font-size: 2.2rem;
+      @media @phone{
+        background-color: @nav-bg;
+        color: @tail;
+      }
     
     
   }

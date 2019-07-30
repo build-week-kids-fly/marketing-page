@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5 {
         display: none;
     }
 
-
+}
 @media only screen and (min-width:600px){
     *{
         background: whitesmoke;
@@ -245,6 +245,7 @@ h1, h2, h3, h4, h5 {
         padding: 55px;
         justify-content: space-evenly;
     }
+}
 @media only screen and (min-width:768px){
     *{
         background: whitesmoke;

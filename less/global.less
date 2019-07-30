@@ -1,21 +1,21 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
   
-  html {
-    font-size: 62.5%;
-  }
+html {
+  font-size: 62.5%;
+}
   
   
-  html, body {
-    font-family: "Russo One", sans-serif;
-    .hero{
-      width: 100%;
-      height: 100%;
-      min-width: 100%;
-      min-height: 100%;
-      position: relative;
+html, body {
+  font-family: "Russo One", sans-serif;
+  .hero {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
   }
     .hero::before{
       background-image: url("../images/kidplane.jpg");
@@ -92,6 +92,9 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    @media @phone {
+      width: 90%; 
+    }
   }
 
   .grow {
@@ -105,7 +108,7 @@
     align-items: center; 
     }
   }
-  
+ 
 //   .Leelee [href="#fly"] {
 //     position: fixed;
 //     top: 50%;

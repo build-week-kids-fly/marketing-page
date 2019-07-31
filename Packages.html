@@ -14,8 +14,9 @@
   </head>
  
 
-    <body>
-            <header>
+    <body onload= "myMove()">
+            
+        <header>
         <div class="top flex">
                 <div class="container flex">
                     <div class="grow"></div>
@@ -31,12 +32,11 @@
               <a href="Sign-in.html">Sign-in</a>
             -->
             </div>
-      
-      
-              </div>
-      
           </div>
+         </div>
         </header>
+      
+
     <div class="container">
             <div class="hero flex-center">
                             <div class="hero-text">
@@ -56,11 +56,9 @@
             </div>
             <img class="seats" src="images/seats.jpg" alt="seat pic"/>
         </section>
-        <div class="animation">
-                <div class="wrapper">
-                    <img class="plane-drawing" src = "images/Leeleesplane1.png" alt = "plane animation">
-                </div>
-                </div>
+        <div id ="animate">
+                <img class="plane-drawing" src = "images/Leeleesplane1.png" alt = "plane animation"> 
+        </div>
         <section class="packages">
                 <div class="package-home">
                         <h2>Escort Packages:</h2><h3 id="description"> Our amazing staff will escort you and your family to and from 
@@ -648,26 +646,31 @@
                 
                 </section>
               
-            
-        </div>
          <!-- container -->
          <footer class="footer">
-
-                <!-- I would really love to put buttons here to navigate between the different pages. But I am not 100 percent sure how to do that, so if one of you can do that, please do. -->
-                <!--<nav>
-                    <a href="#">Home</a>
-                    <a href="About.html">About Us</a>
-                    <a href="Packages.html">Packages</a>
-                    <a href="Blog.html">Blog</a>
-                    <a href="Testimonials.html">Testimonials</a>
-                    <a href="Contact.html">Contact Us</a>
-                    <a href="Sign-in.html">Sign-in</a>
-                </nav>
-              -->
-    
+   
             <p>Copyright KidsFly 2019</p>
-    
+   
         </footer>
+        </div>
+        <script>
+                        function myMove() {
+                          var elem = document.getElementById("animate");   
+                          var pos = 0;
+                          var pos2 = 300;
+                          var id = setInterval(frame, 5);
+                          function frame() {
+                            if (pos == 1300) {
+                              clearInterval(id);
+                            } else {
+                              pos++; 
+                              pos2++;
+                              elem.style.bottom = pos + "px"; 
+                              elem.style.right = pos2 + "px"; 
+                            }
+                          }
+                        }
+                        </script>
     </body>
         
 </html>

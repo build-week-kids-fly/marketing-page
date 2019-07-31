@@ -18,9 +18,9 @@
   </head>
  
   <!---Header-->
-  <body>
-
-    <div class="top flex">
+  <body onload= "myMove()">
+    
+     <div class="top flex">
       <div class="container flex">
         <div class="grow"></div>
         
@@ -31,28 +31,29 @@
           <a href="KidsFly.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="Packages.html">Packages</a>
-          <!--<a href="Testimonials.html">Testimonials</a>-->
-          <!--<a href="Contact.html">Contact Us</a>
-            <a href="Sign-in.html">Sign-in</a>
-          -->
+         
         </div>
         
         
       </div>
       
     </div>
-      
-   
+    
+    
     <div class="container home">
+      
       <div class="hero flex-center">
         <div class="hero-text">
-      <section class = "heading">
-        <!-- <img src="" /> Maybe an image here -->
-      <img class="Leelee" src = "images/Leeleesplane.png" alt = "plane drawing"> 
+          <section class = "heading">
+            <img class="Leelee" src = "images/Leeleesplane.png" alt = "plane drawing"> 
+      <div id ="container">
+        <div id ="animate">
+          <img class="plane-drawing" src = "images/Leeleesplane1.png" alt = "plane animation"> 
+        </div>
+      </div>
       <div>
-        <button class="btn">Log In</button>
-    </div>
-    
+          <button class="btn">Log In</button>
+      </div>
         <section class="content">
             <div class="top-content">
             <h1>Mission Statement</h1>
@@ -66,12 +67,15 @@
 
         </section>
 
-      </section>
+      <!-- </section>
       <div class="animation">
       <div class="wrapper">
           <img class="plane-drawing" src = "images/Leeleesplane1.png" alt = "plane animation">
       </div>
-      </div>
+      </div> -->
+      
+ 
+
       
         <section class="content-section flex">
         
@@ -157,28 +161,36 @@
 
       
            
-      </section>   
+      </section>
+        
       
         <!-- container -->
         <footer class="footer">
 
-            <!-- I would really love to put buttons here to navigate between the different pages. But I am not 100 percent sure how to do that, so if one of you can do that, please do. -->
-            <!--<nav>
-                <a href="#">Home</a>
-                <a href="About.html">About Us</a>
-                <a href="Packages.html">Packages</a>
-                <a href="Blog.html">Blog</a>
-                <a href="Testimonials.html">Testimonials</a>
-                <a href="Contact.html">Contact Us</a>
-                <a href="Sign-in.html">Sign-in</a>
-            </nav>
-          -->
-
-        <p>Copyright KidsFly 2019</p>
+          <p>Copyright KidsFly 2019</p>
 
         </footer>
+     
     
     </div>
+    <script>
+        function myMove() {
+          var elem = document.getElementById("animate");   
+          var pos = 0;
+          var pos2 = 300;
+          var id = setInterval(frame, 5);
+          function frame() {
+            if (pos == 1300) {
+              clearInterval(id);
+            } else {
+              pos++; 
+              pos2++;
+              elem.style.bottom = pos + "px"; 
+              elem.style.right = pos2 + "px"; 
+            }
+          }
+        }
+        </script>
   </body>
 </html>
 

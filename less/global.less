@@ -108,6 +108,25 @@ html, body {
     align-items: center; 
     }
   }
+  .wrapper {
+    width: 100%;
+    transition: all 1s;
+    transform-origin: 50% 50%;
+  }
+  .plane-drawing {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    transition: transform 1s;
+
+  }
+  .animation:hover .wrapper {
+    transform: rotate(360deg);
+  }
+  .animation:hover .plane-drawing {
+    transform: rotate(-360deg);
+  }
  
 //   .Leelee [href="#fly"] {
 //     position: fixed;

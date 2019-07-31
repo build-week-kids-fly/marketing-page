@@ -90,10 +90,23 @@
 .package-flex{
     display: flex;
     flex-direction: column;
-    width: auto; 
+    width: 0 auto; 
     margin-bottom: 30px;
     margin-top: 25px;
 
+}
+.package-flex-lone{
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    margin-bottom: 30px;
+    margin-top: 25px;
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+         
+    }
 }
 
 .ul .a, label{
@@ -146,16 +159,11 @@ button:active:after {
         }
       }
       .crew {
-        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        // max-width: 300px;
         margin: auto;
         text-align: center;
         font-family: arial;
       }
       
-    //   .title {
-    //     color: grey;
-    //     font-size: 18px;
-    //   }
+   
       
    

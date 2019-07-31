@@ -1,12 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
   
 html {
   font-size: 62.5%;
-}
-  
+} 
   
 html, body {
   font-family: "Russo One", sans-serif;
@@ -53,79 +51,72 @@ html, body {
       z-index: -1;
       opacity: 0.4;
   }
+}
   
-  }
-  
-  h1, h2, h3, h4, h5 {
-    font-family: "Ubuntu", sans-serif;
-    color: @captains-hat;
-  }
-  
-  h1 {
-    font-weight: bolder;
-    font-size: 4rem;
-  }
-  
-  h2 {
-    font-weight: bold;
-    font-size: 3.2rem;
-    padding-bottom: 10px;
-  }
-  
-  h3 {
-    font-size: 2.5rem;
-    padding-bottom: 10px;
-  }
-  
-  p {
-    line-height: 1.5;
-    font-size: 1.6rem;
-    padding-bottom: 10px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    @media @phone {
-      width: 90%; 
-    }
-  }
+h1, h2, h3, h4, h5 {
+  font-family: "Ubuntu", sans-serif;
+  color: @captains-hat;
+}
 
-  .grow {
-    flex-grow: 1;
-  }
+h1 {
+  font-weight: bolder;
+  font-size: 4rem;
+}
 
-  .flex{
-    display: flex; 
-    @media @phone {
-    flex-direction: column; 
-    align-items: center; 
-    }
+h2 {
+  font-weight: bold;
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  @media @phone {
+    width: 90%; 
   }
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.flex{
+  display: flex; 
+  @media @phone {
+  flex-direction: column; 
+  align-items: center; 
+  }
+}
+
+#container {
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  
+}
+#animate {
+  width: 150px;
+  height: 100px;
+  position: fixed;
+}
  
-//   .Leelee [href="#fly"] {
-//     position: fixed;
-//     top: 50%;
-//     left: 100%;
-//     height: 112px;
-//     width: 150px;
-//     background: url(%%image%%);
-//     background-size: 100% 100%;
-//     -webkit-animation: fly 10s linear infinite;
-//     animation: fly 10s linear infinite;
-// }
-// @-webkit-keyframes fly {
-//     0% { left: 100%; }
-//     70%, 100% { left: -100px; }
-// }
-// @keyframes fly {
-//     0% { left: 100%; }
-//     70%, 100% { left: -100px; }
-// }
+
 

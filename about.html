@@ -4,83 +4,97 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/index.css" />
     <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KidsFly</title>
-
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
   </head>
-  <body>
-      <div class="top flex">
-          <div class="container flex">
-            <div class="grow"></div>
-            
-            <img src="images/KidsFlyLogo1.JPG" title="logo" />
-            
-            
-            <div class="nav">
-              <a href="KidsFly.html">Home</a>
-              <a href="about.html">About Us</a>
-              <a href="Packages.html">Packages</a>
-              <!--<a href="Testimonials.html">Testimonials</a>-->
-              <!--<a href="Contact.html">Contact Us</a>
-                <a href="Sign-in.html">Sign-in</a>
-              -->
-            </div>
-            
-            
-          </div>
-          
-        </div>
-        
-        
-        <div class="container home">
+  <body onload= "myMove()"><!-- This body tag allows the animation to run on the page loading -->
+    <!-- This class is the navigation bar -->
+    <header><!---Header--> 
+    <div class="top flex">
+      <div class="container flex">
+        <div class="grow"></div>        
+        <img src="images/KidsFlyLogo1.JPG" title="logo" />             
+        <div class="nav">
+          <a href="KidsFly.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="Packages.html">Packages</a>
+        </div>        
+      </div>        
+    </div>
+    </header>
+    <div class="container home">
+    <!-- This class here adds the background image -->
       <div class="hero flex-center">
+        <!-- this class layers the text on top of the background -->
         <div class="hero-text">
-          
-        <div class="crew">
+          <div class="crew">
         <h1>The Kid's Fly Crew</h1>
         <div class="web-ui">
           <div class="crew">
+            <!-- this class divides the Web UI from React developers allowing the different flex positions -->
             <img class="pic" src="images/0.jpeg" alt="my photo" />
-
             <h3>Jenny O'Bryant</h3>
             <p>Full-Stack Web UI Developer</p>
+            <!-- Social Media Profiles -->
+            <div class="profiles">
+                <a href="https://github.com/jennyobryant"><i class="fa fa-lg fa-github"></i></a>
+                <!-- <a href="#"><i class="fa fa-twitter"></i></a>  -->
+                <a href="https://www.linkedin.com/in/jennyobryant/"><i class="fa fa-linkedin"></i></a> 
+                <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+            </div> 
           </div>
           <div class="crew">
-
             <img class= "pic" src="images/tf.jpg" alt="my photo" />
-
             <h3>Tammy Fisher</h3>
             <p>Full-Stack Web UI Developer</p>
-          </div>
-                    
+            <!-- Social Media Profiles -->
+            <div class="profiles">
+              <a href="https://github.com/TammyLFisher"><i class="fa fa-lg fa-github"></i></a>
+              <a href="https://twitter.com/Kochira_heruko1"><i class="fa fa-twitter"></i></a> 
+              <a href="https://www.linkedin.com/in/tammy-fisher-37b4a635"><i class="fa fa-linkedin"></i></a> 
+              <a href="https://m.facebook.com/tammy.fisher.5815"><i class="fa fa-facebook"></i></a>
+            </div>           
+          </div>                    
         </div>
         <img class= "pic" src="images/benedict.jpg" alt="my photo" />
-
         <h3>Benedict Schurwanz</h3>
         <p>Full-Stack Web REACT Developer</p>
-          </div>
+        <!-- Social Media Profiles -->
+        <div class="profiles">
+            <a href="https://github.com/benedictify"><i class="fa fa-lg fa-github"></i></a>
+            <!-- <a href="#"><i class="fa fa-twitter"></i></a>  -->
+            <a href="https://www.linkedin.com/in/benedict-schurwanz/"><i class="fa fa-linkedin"></i></a> 
+            <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
         </div>
+        <!-- this is the animation image -->
+        <div id ="animate">
+            <img class="plane-drawing" src = "images/Leeleesplane1.png" alt = "plane animation"> 
+        </div>
+      </div> 
+    </div>
+  </div>
+        <footer class="footer">          
+          <p>Copyright KidsFly 2019</p>          
+        </footer>
       </div><!-- container -->
-      
-      <footer class="footer">
-        
-        <!-- I would really love to put buttons here to navigate between the different pages. But I am not 100 percent sure how to do that, so if one of you can do that, please do. -->
-        <!--<nav>
-          <a href="#">Home</a>
-          <a href="About.html">About Us</a>
-          <a href="Packages.html">Packages</a>
-          <a href="Blog.html">Blog</a>
-          <a href="Testimonials.html">Testimonials</a>
-          <a href="Contact.html">Contact Us</a>
-          <a href="Sign-in.html">Sign-in</a>
-        </nav>
-      -->
-      
-      <p>Copyright KidsFly 2019</p>
-      
-    </footer>
+      <!-- This is the Dom manipulation used to create the animation movements -->
+    <script>
+      function myMove() {
+        var elem = document.getElementById("animate");   
+        var pos = 0;
+        var pos2 = 300;
+        var id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 1300) {
+            clearInterval(id);
+          } else {
+            pos++; 
+            pos2++;
+            elem.style.bottom = pos + "px"; 
+            elem.style.right = pos2 + "px"; 
+          }
+        }
+      }
+    </script>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KidsFly</title> 
   </head> 
-  <body onload= "myMove()"><!-- This body tag allows the animation to run on the page loading --> 
+  <body onload= "init()"><!-- This body tag allows the animation to run on the page loading --> 
      <!-- This is the navigation bar --> 
      <header> <!---Header--> 
         <img src="images/KidsFlyLogo1.JPG" title="logo" />  
@@ -107,9 +107,47 @@
           <p>Copyright KidsFly 2019</p>
         </footer>    
     </div><!-- container -->
+
+    <div id="chat">
+    <p> Help Session </p>
+    <p>
+      Contact us if you have questions.  We will response you back soon!
+    </p>
+    <form action = "https://getsimpleform.com/messages?form_api_token=b96abf69218d305f435ad8aec3d9d859"
+    method="POST">
+      Email Address: <br>
+      <input type="text" name="email">
+      <br>
+      Message: <br>
+      <textarea name="message" rows = "4" cols = "25">
+
+      </textarea>
+      <br><br>
+      <input type="submit" value="Submit">
+      
+    </form>
+<button onclick="closeChat()">
+  Close 
+</button>
+  
+    
+    
+      
+    </div>
     <!-- This is the Dom Manipulation to create the animation movements -->
     <script>
-      function myMove() {
+        function closeChat() {
+          var chat = document.getElementById("chat");
+          chat.style.display = "none"; 
+        }
+
+      function init() {
+        var chat = document.getElementById("chat");
+
+        setTimeout(() => {
+          chat.style.display = "block"; 
+        }, 2000)
+
         var elem = document.getElementById("animate");   
         var pos = 0;
         var pos2 = 300;

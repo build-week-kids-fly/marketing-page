@@ -1,0 +1,476 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Russo One", sans-serif;
+}
+html .hero,
+body .hero {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+html .hero::before,
+body .hero::before {
+  background-image: url("../images/kidplane.jpg");
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.3;
+}
+html .hero-text::before,
+body .hero-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  min-width: 100%;
+  min-height: 12em;
+  z-index: inherit-1;
+  opacity: 0.4;
+  background-color: transparent;
+}
+html .hero::after,
+body .hero::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ubuntu", sans-serif;
+  color: #212529;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+h2 {
+  font-weight: bold;
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 0 auto;
+  margin: 10rem;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+.grow {
+  flex-grow: 1;
+}
+.flex {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#container {
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+#animate {
+  width: 150px;
+  height: 100px;
+  position: fixed;
+}
+header {
+  width: 0 auto;
+  margin: 10rem;
+  display: flex;
+  border-bottom: 2px dashed silver;
+  padding: 10px 0;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+}
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0 0 0 50px;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+header nav a {
+  color: #454A59;
+  text-decoration: none;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header nav a {
+    background-color: #F6F6F6;
+    color: #5E6164;
+  }
+}
+header nav a:hover {
+  color: silver;
+  background: #5E6164;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  header nav a:hover {
+    color: lightblue;
+    background-color: #454A59;
+  }
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+  background-color: lightblue;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
+.home .heading {
+  border-bottom: 2px dashed silver;
+  padding-bottom: 14px;
+}
+.content-section.flex {
+  margin-top: 25px;
+}
+.content-pick .offers .checkbox {
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .content-pick .offers .checkbox {
+    width: 100%;
+  }
+}
+.content {
+  padding-top: 5rem;
+  margin: 0 auto;
+}
+.pic {
+  width: 20rem;
+  height: 20rem;
+}
+.crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web-ui {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .web-ui {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.seats {
+  height: 20rem;
+  width: 100%;
+}
+.package-home {
+  border-top: 2px dashed silver;
+  border-bottom: 2px dashed silver;
+}
+.packages-content {
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .packages-content {
+    width: 100%;
+  }
+}
+.packages {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .packages {
+    width: 100%;
+  }
+}
+.pflex {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .pflex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.package-flex {
+  display: flex;
+  flex-direction: column;
+  width: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+.package-flex-lone {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .package-flex-lone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.ul .a,
+label {
+  font-size: 1.6rem;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  height: 2rem;
+  color: lightblue;
+  background-color: #22283A;
+  border: none;
+  padding: 2rem;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-top: 1rem;
+  position: relative;
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+  }
+}
+button:hover {
+  background: lightblue;
+  color: #22283A;
+  cursor: pointer;
+}
+button:after {
+  content: "";
+  background: #90ee90;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+@media (max-width: 500px) {
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.crew {
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}

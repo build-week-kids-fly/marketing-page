@@ -473,4 +473,23 @@ button:active:after {
   margin: auto;
   text-align: center;
   font-family: arial;
+  font-size: 24px;
+}
+.testimonial1 {
+  font-size: 2rem;
+  background-color: #5E6164;
+  color: silver;
+  margin: 1rem;
+}
+.testimonial2 {
+  font-size: 2rem;
+  background-color: #454A59;
+  color: #F6F6F6;
+  margin: 1rem;
+}
+.testimonial3 {
+  font-size: 2rem;
+  background-color: #23293B;
+  color: lightgrey;
+  margin: 1rem;
 }

@@ -1,189 +1,187 @@
 .home {
-    @media @phone{
-        width: 90%; 
-    }
+  @media @phone {
+    width: 90%;
+  }
 }
-.home .heading{
-    border-bottom: 2px dashed @wing; 
-    padding-bottom: 14px;
-   
-}
-
-.content-section.flex{
-    margin-top: 25px; 
+.home .heading {
+  border-bottom: 2px dashed @wing;
+  padding-bottom: 14px;
 }
 
-.content-pick .offers .checkbox{
-    width: 30%; 
-    margin-bottom: 30px;
-    margin-top: 25px;
-    @media @phone{
-        width: 100%; 
-    } 
+.content-section.flex {
+  margin-top: 25px;
+}
+
+.content-pick .offers .checkbox {
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  @media @phone {
+    width: 100%;
+  }
 }
 
 .content {
-    padding-top: 5rem;
-    margin: 0 auto;
+  padding-top: 5rem;
+  margin: 0 auto;
 }
-.pic{
-    width: 20rem;
-    height: 20rem;
-}
-.crew{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.web-ui{
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    @media @phone {
-        width: 100%; 
-        flex-direction: column; 
-    }
-}
-.seats{
-    height: 20rem;
-    width: 100%;
-}
-.package-home{
-    border-top: 2px dashed @wing;
-    border-bottom: 2px dashed @wing;
-}
-.packages-content{
-    width: 30%; 
-    margin-bottom: 30px;
-    margin-top: 25px;
-    @media @phone{
-        width: 100%; 
-    } 
-}
-.packages {
-    display: flex;
-    flex-direction: column;
-    width: auto; 
-    margin-bottom: 30px;
-    margin-top: 25px;
-    @media @phone{
-        width: 100%; 
-    } 
-}
-.pflex{
-    display: flex;
-    flex-direction: row;
-    width: auto; 
-    margin-bottom: 30px;
-    margin-top: 25px;
-    @media @phone{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-         
-    } 
-}
-
-    
-.package-flex{
-    display: flex;
-    flex-direction: column;
-    width: 0 auto; 
-    margin-bottom: 30px;
-    margin-top: 25px;
-
-}
-.package-flex-lone{
-    display: flex;
-    flex-direction: column;
-    width: 50%; 
-    margin-bottom: 30px;
-    margin-top: 25px;
-    @media @phone{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-         
-    }
-}
-
-.ul .a, label{
-    font-size: 1.6rem;
-    } 
-
-button{
-    .custom-buttons(30%, 2rem, row, @propellar, @btn-color, center);
-    border: none;
-    padding: 2rem;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    border-radius: 5px;
-    padding-top: 1rem;
-    position: relative;
-    @media @phone {
-        width: 100%;
-    }
-    &:hover {
-        background: @propellar;
-        color: @btn-color;
-        cursor: pointer;
-    }
-}
-button:after {
-        content: "";
-        background: #90ee90;
-        position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -20px !important;
-        margin-top: -120%;
-        opacity: 0;
-        transition: all 0.8s;
-}
-button:active:after {
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        transition: 0s;
-}
-.checkbox{
-@media @phone {
-    display: flex;
-    flex-direction: column;
-    }
+.pic {
+  width: 20rem;
+  height: 20rem;
 }
 .crew {
-margin: auto;
-text-align: center;
-font-family: arial;
-font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web-ui {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  @media @phone {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.seats {
+  height: 20rem;
+  width: 100%;
+}
+.package-home {
+  border-top: 2px dashed @wing;
+  border-bottom: 2px dashed @wing;
+}
+.packages-content {
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  @media @phone {
+    width: 100%;
+  }
+}
+.packages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  @media @phone {
+    width: 100%;
+  }
+}
+.pflex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  justify-content: center;
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
-.testimonial1{
-    font-size: 2rem;
-    background-color: @cloud-lining;
-    color: @wing;
-    margin: 1rem;
+.package-flex {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  margin: auto;
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 }
-.testimonial2{
-    font-size: 2rem;
-    background-color: @seats;
-    color: @cloud;
-    margin: 1rem;
-}
-.testimonial3{
-    font-size: 2rem;
-    background-color: @tires;
-    color: @tail;
-    margin: 1rem;
+.package-flex-lone {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
+.ul .a,
+label {
+  font-size: 1.6rem;
+}
 
-      
-   
-      
-   
+button {
+  .custom-buttons( 2.5rem, row, @propellar, @btn-color, center);
+  border: none;
+  padding: 2rem;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-top: 1rem;
+  position: relative;
+  @media @phone {
+    width: 100%;
+  }
+  &:hover {
+    background: @propellar;
+    color: @btn-color;
+    cursor: pointer;
+  }
+}
+button:after {
+  content: "";
+  background: #90ee90;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.checkbox {
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.crew {
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  font-size: 24px;
+}
+
+.testimonial1 {
+  font-size: 2rem;
+  background-color: @cloud-lining;
+  color: @wing;
+  margin: 1rem;
+}
+.testimonial2 {
+  font-size: 2rem;
+  background-color: @seats;
+  color: @cloud;
+  margin: 1rem;
+}
+.testimonial3 {
+  font-size: 2rem;
+  background-color: @tires;
+  color: @tail;
+  margin: 1rem;
+}

@@ -381,7 +381,8 @@ header nav a:hover {
 .packages {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 25px;
 }
@@ -393,9 +394,11 @@ header nav a:hover {
 .pflex {
   display: flex;
   flex-direction: row;
-  width: auto;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 25px;
+  justify-content: center;
 }
 @media (max-width: 500px) {
   .pflex {
@@ -407,9 +410,16 @@ header nav a:hover {
 .package-flex {
   display: flex;
   flex-direction: column;
-  width: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 25px;
+  width: 40%;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .package-flex {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 }
 .package-flex-lone {
   display: flex;
@@ -433,8 +443,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 30%;
-  height: 2rem;
+  height: 2.5rem;
   color: lightblue;
   background-color: #22283A;
   border: none;

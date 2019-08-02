@@ -331,7 +331,7 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   .content-pick .offers .checkbox {
-    width: 100%;
+    width: 90%;
   }
 }
 .content {
@@ -361,10 +361,11 @@ header nav a:hover {
   }
 }
 .seats {
-  height: 20rem;
+  height: 30rem;
   width: 100%;
 }
 .package-home {
+  margin: 0 auto;
   border-top: 2px dashed silver;
   border-bottom: 2px dashed silver;
 }
@@ -388,13 +389,13 @@ header nav a:hover {
 }
 @media (max-width: 500px) {
   .packages {
-    width: 100%;
+    width: 90%;
   }
 }
 .pflex {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 85rem;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 25px;
@@ -410,9 +411,10 @@ header nav a:hover {
 .package-flex {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 85rem;
   align-items: center;
   margin: auto;
+  padding: 15px;
 }
 @media (max-width: 500px) {
   .package-flex {
@@ -424,7 +426,7 @@ header nav a:hover {
 .package-flex-lone {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 85rem;
   margin-bottom: 30px;
   margin-top: 25px;
 }
@@ -432,7 +434,7 @@ header nav a:hover {
   .package-flex-lone {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
 }
 .ul .a,
@@ -448,6 +450,7 @@ button {
   background-color: #22283A;
   border: none;
   padding: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   transition-duration: 0.4s;
   text-decoration: none;
@@ -483,11 +486,9 @@ button:active:after {
   opacity: 1;
   transition: 0s;
 }
-@media (max-width: 500px) {
-  .checkbox {
-    display: flex;
-    flex-direction: column;
-  }
+.checkbox {
+  display: flex;
+  flex-direction: column;
 }
 .crew {
   margin: auto;

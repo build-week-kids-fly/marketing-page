@@ -17,7 +17,7 @@
   margin-bottom: 30px;
   margin-top: 25px;
   @media @phone {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -46,10 +46,11 @@
   }
 }
 .seats {
-  height: 20rem;
+  height: 30rem;
   width: 100%;
 }
 .package-home {
+  margin: 0 auto;
   border-top: 2px dashed @wing;
   border-bottom: 2px dashed @wing;
 }
@@ -69,13 +70,13 @@
   margin-bottom: 30px;
   margin-top: 25px;
   @media @phone {
-    width: 100%;
+    width: 90%;
   }
 }
 .pflex {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 85rem;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 25px;
@@ -90,9 +91,10 @@
 .package-flex {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 85rem;
   align-items: center;
   margin: auto;
+  padding: 15px;
   @media @phone {
     display: flex;
     flex-direction: column;
@@ -102,13 +104,13 @@
 .package-flex-lone {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 85rem;
   margin-bottom: 30px;
   margin-top: 25px;
   @media @phone {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -121,6 +123,7 @@ button {
   .custom-buttons( 2.5rem, row, @propellar, @btn-color, center);
   border: none;
   padding: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   transition-duration: 0.4s;
   text-decoration: none;
@@ -155,10 +158,8 @@ button:active:after {
   transition: 0s;
 }
 .checkbox {
-  @media @phone {
     display: flex;
     flex-direction: column;
-  }
 }
 .crew {
   margin: auto;

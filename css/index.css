@@ -214,12 +214,12 @@ img {
   height: auto;
 }
 .container {
-  max-width: 0 auto;
   margin: 10rem;
 }
 @media (max-width: 500px) {
   .container {
     width: 90%;
+    margin: 0 auto;
   }
 }
 .grow {
